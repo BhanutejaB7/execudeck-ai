@@ -4,3 +4,4 @@ output_charts/*
 output_presentations/*
 *.pptx
 .streamlit/
+venv/
