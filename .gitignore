@@ -1,0 +1,6 @@
+__pycache__/
+.env
+output_charts/*
+output_presentations/*
+*.pptx
+.streamlit/

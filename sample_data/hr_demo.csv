@@ -1,0 +1,11 @@
+Department,Role,Employees_Count,Avg_Salary,Avg_Satisfaction,Performance_Score
+Engineering,Software Engineer,45,115000,4.2,85.5
+Engineering,Data Scientist,12,125000,3.9,88.2
+Engineering,Product Manager,8,130000,4.1,84.0
+Sales,Account Executive,25,95000,3.8,78.5
+Sales,Customer Success Manager,15,85000,4.3,82.1
+Marketing,Growth Marketer,10,90000,4.0,81.4
+Marketing,Brand Designer,5,80000,4.5,83.0
+Operations,HR Specialist,6,75000,4.4,86.0
+Operations,Finance Analyst,8,95000,4.1,87.5
+Operations,Office Manager,3,60000,4.6,80.0

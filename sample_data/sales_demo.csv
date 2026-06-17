@@ -1,0 +1,21 @@
+Date,Region,Product,Sales,Units,Profit,Customer_Segment
+2026-01-10,North,Enterprise Cloud Suite,12000,4,3600,Enterprise
+2026-01-12,South,AI Security Agent,7500,5,1500,Mid-Market
+2026-01-15,East,Analytics Dashboard,4500,9,900,SMB
+2026-01-20,West,Enterprise Cloud Suite,15000,5,4500,Enterprise
+2026-02-02,North,Analytics Dashboard,6000,12,1200,SMB
+2026-02-05,South,AI Security Agent,9000,6,1800,Mid-Market
+2026-02-12,East,Enterprise Cloud Suite,24000,8,7200,Enterprise
+2026-02-20,West,AI Security Agent,12000,8,2400,Mid-Market
+2026-03-01,North,AI Security Agent,15000,10,3000,Enterprise
+2026-03-05,South,Analytics Dashboard,3000,6,600,SMB
+2026-03-15,East,AI Security Agent,6000,4,1200,SMB
+2026-03-22,West,Enterprise Cloud Suite,18000,6,5400,Enterprise
+2026-04-01,North,Analytics Dashboard,5000,10,1000,SMB
+2026-04-10,South,Enterprise Cloud Suite,12000,4,3600,Mid-Market
+2026-04-18,East,AI Security Agent,10500,7,2100,Mid-Market
+2026-04-25,West,Analytics Dashboard,8000,16,1600,SMB
+2026-05-02,North,Enterprise Cloud Suite,27000,9,8100,Enterprise
+2026-05-15,South,Analytics Dashboard,4000,8,800,SMB
+2026-05-20,East,Enterprise Cloud Suite,15000,5,4500,Enterprise
+2026-05-28,West,AI Security Agent,13500,9,2700,Mid-Market

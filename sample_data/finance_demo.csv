@@ -1,0 +1,17 @@
+Quarter,Cost_Center,Budget,Actual_Spend,Category
+Q1,Research & Development,250000,265000,Engineering
+Q1,Sales & Marketing,400000,385000,Commercial
+Q1,General & Admin,150000,148000,Operations
+Q1,Customer Support,120000,125000,Operations
+Q2,Research & Development,270000,290000,Engineering
+Q2,Sales & Marketing,420000,445000,Commercial
+Q2,General & Admin,155000,152000,Operations
+Q2,Customer Support,125000,121000,Operations
+Q3,Research & Development,280000,275000,Engineering
+Q3,Sales & Marketing,450000,430000,Commercial
+Q3,General & Admin,160000,158000,Operations
+Q3,Customer Support,130000,132000,Operations
+Q4,Research & Development,320000,340000,Engineering
+Q4,Sales & Marketing,500000,520000,Commercial
+Q4,General & Admin,180000,178000,Operations
+Q4,Customer Support,140000,143000,Operations
