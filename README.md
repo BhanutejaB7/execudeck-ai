@@ -47,6 +47,16 @@ Develop, test, and preview the full application layout locally on your Windows m
    streamlit run app.py
    ```
 
+6. **Run the Verification Test Suite**:
+   Test using the default small dataset:
+   ```powershell
+   python verify_setup.py
+   ```
+   Or verify using the large enterprise-grade dataset (~6,000 rows):
+   ```powershell
+   python verify_setup.py --large
+   ```
+
 ---
 
 ## 2. GitHub Workflow
@@ -158,9 +168,17 @@ Showcase ExecuDeck AI end-to-end:
 
 ## 6. Sample Datasets Information
 
-The repository pre-packages three public-style demo datasets inside the `sample_data/` directory:
-- `sales_demo.csv`: Simulates sales ledger records (Dates, Region, Product lines, Units sold, Revenues, Profit margin, and Segments).
-- `finance_demo.csv`: Departmental budgets containing Cost Centers, quarterly budgets, actual expenditures, and functional category groupings.
-- `hr_demo.csv`: Headcount rosters tracking engineering/operations/sales salary distributions, employee morale ratings, and performance marks.
+The repository pre-packages datasets inside the [sample_data/](file:///c:/Users/Bhanuteja/Documents/ppt%20generator/sample_data) directory for instant execution and evaluation:
+
+- **★ RECOMMENDED: `enterprise_sales_demo.csv`**: A robust, widescreen-formatted transactional sales ledger containing **6,000+ records** covering 2024 to 2026.
+  - **Features**: Includes Transaction_ID, Date, Region, Country, Business_Unit, Product_Category, Product_Name, Customer_Segment, Sales_Channel, Units_Sold, Unit_Price, Revenue, Cost, Profit, Profit_Margin, Discount_Percentage, Customer_Rating, Quarter, and Year.
+  - **Data Design & Strategic Insights**:
+    - *Regional Performance*: North America drives the largest revenue share, Europe is stable, Asia-Pacific exhibits the fastest growth rates (high volume of GPU accelerators/API packages), while Latin America struggles with low volume and low margins.
+    - *Seasonality*: Q4 exhibits sales surges (1.35x budget flushes), while Q1 experiences post-holiday contractions (0.80x).
+    - *Outlier Anomaly*: ~1.2% of bulk Enterprise orders feature extreme discounts (55% - 75%), which trigger negative profit margins on expensive hardware items—intended for the Qwen Analyst to discover and address as a key margin risk.
+    - *Underperforming Product*: `Smart Assistant Pro` exhibits poor rating averages (~3.2), suggesting a strategic quality-assurance or market-repositioning issue.
+- `sales_demo.csv`: A smaller (20-row) sales ledger for quick system tests.
+- `finance_demo.csv`: Departmental budgets tracking quarterly actual vs projected expenditures across R&D, G&A, and Sales.
+- `hr_demo.csv`: Headcount rosters mapping employee average compensation, morale levels, and department scores.
 
 *These datasets contain synthetic records and are intended for demonstration purposes only.*

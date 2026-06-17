@@ -22,7 +22,11 @@ except Exception as e:
 # 1. Test data loading and analyzer
 try:
     from modules.data_analyzer import load_dataset, analyze_dataset
-    demo_data_path = config.SAMPLE_DATA_DIR / "sales_demo.csv"
+    
+    # Check if --large argument is provided to test the 5,000+ row dataset
+    use_large = "--large" in sys.argv
+    dataset_name = "enterprise_sales_demo.csv" if use_large else "sales_demo.csv"
+    demo_data_path = config.SAMPLE_DATA_DIR / dataset_name
     
     if not demo_data_path.exists():
         print(f"[FAIL] Sample dataset not found at {demo_data_path}")
@@ -31,7 +35,7 @@ try:
     df = load_dataset(demo_data_path)
     profile = analyze_dataset(df)
     
-    print("[PASS] data_analyzer: Loaded and profiled sales_demo.csv successfully.")
+    print(f"[PASS] data_analyzer: Loaded and profiled {dataset_name} successfully.")
     print(f"       Detected {profile['dimensions']['rows']} rows, {profile['dimensions']['columns']} columns.")
 except Exception as e:
     print(f"[FAIL] data_analyzer module test failed: {e}")

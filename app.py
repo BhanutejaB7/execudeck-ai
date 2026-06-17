@@ -232,7 +232,13 @@ with tabs[0]:
     # Pre-packaged demo selector
     demo_choice = st.selectbox(
         "Load Demo Dataset",
-        ["-- None --", "Sales Transaction Ledger (sales_demo.csv)", "Departmental Budgets (finance_demo.csv)", "Employee Headcount & Morale (hr_demo.csv)"],
+        [
+            "-- None --", 
+            "★ RECOMMENDED: Enterprise Widescreen Ledger (enterprise_sales_demo.csv - 6,000+ rows)",
+            "Sales Transaction Ledger (sales_demo.csv)", 
+            "Departmental Budgets (finance_demo.csv)", 
+            "Employee Headcount & Morale (hr_demo.csv)"
+        ],
         index=0
     )
     
@@ -240,7 +246,9 @@ with tabs[0]:
     
     selected_df_path = None
     if demo_choice != "-- None --":
-        if "sales_demo.csv" in demo_choice:
+        if "enterprise_sales_demo.csv" in demo_choice:
+            selected_df_path = config.SAMPLE_DATA_DIR / "enterprise_sales_demo.csv"
+        elif "sales_demo.csv" in demo_choice:
             selected_df_path = config.SAMPLE_DATA_DIR / "sales_demo.csv"
         elif "finance_demo.csv" in demo_choice:
             selected_df_path = config.SAMPLE_DATA_DIR / "finance_demo.csv"
